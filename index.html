@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ohmyfood</title>
-    <link rel="stylesheet" type="text/css" href="../css/style.scss">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Shrikhand&display=swap"
@@ -16,12 +16,14 @@
 </head>
 
 <body>
-    <header>
-        <img>
-        <section>
-            <i></i>
-            <input>
-        </section>
+    <header class="header">
+        <div class="header__logo">
+            <img class="header__logo-image" src="assets/images/logo/ohmyfood.png" alt="Logo Ohmyfood">
+        </div>
+        <div class="header__search-function">
+            <i class="fa-solid fa-location-dot"></i>
+            <input id="search-function" type="text" placeholder="Paris, Belleville">
+        </div>
     </header>
 
     <main>

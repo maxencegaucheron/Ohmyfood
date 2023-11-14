@@ -1,3 +1,46 @@
-// -----------------------------------------------------------------------------
-// This file contains all styles related to the header of the site/application.
-// -----------------------------------------------------------------------------
+.header {
+    height: 113px;
+
+    &__logo {
+        width: 100%;
+        height: 55%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__logo-image {
+        width: 162px;
+    }
+
+    &__search-function {
+        height: 45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #353535;
+        background-color: #EAEAEA;
+        box-shadow: inset 1px 6px 10px -10px #353535;
+        ;
+    }
+
+    &__search-function i {
+        padding-right: 10px;
+    }
+
+    &__search-function input {
+        width: 112px;
+        border: none;
+        background-color: #EAEAEA;
+    }
+
+    &__search-function textarea:active,
+    input:focus {
+        outline: none;
+    }
+
+    ::placeholder {
+        color: #353535;
+    }
+
+}
