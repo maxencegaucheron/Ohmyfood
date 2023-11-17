@@ -115,3 +115,26 @@ body {
 .header ::placeholder {
   color: #353535;
 }
+
+.footer {
+  box-sizing: border-box;
+  color: white;
+  background-color: #353535;
+  padding: 25px 25px 15px;
+}
+.footer__title {
+  font-family: "Shrikhand";
+  margin: 0 0 25px;
+}
+.footer__icon-and-text {
+  display: flex;
+  padding: 0;
+}
+.footer__icon-and-text i {
+  display: flex;
+  align-items: center;
+  margin: 0 10px 10px 0;
+}
+.footer__text {
+  margin: 0 0 10px;
+}
