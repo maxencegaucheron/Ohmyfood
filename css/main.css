@@ -146,14 +146,12 @@ body {
   display: flex;
 }
 
-.website-titles {
-  padding: 20px 20px 60px;
-  background-color: #f6f6f6;
-}
-.website-titles__title {
-  text-align: center;
-  line-height: 30px;
-  padding: 0 40px 0;
+.colored-button {
+  color: white;
+  background-image: linear-gradient(#FF79DA, #9356DC);
+  border-radius: 50px;
+  padding: 15px 20px 15px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
 }
 
 .restaurants {
@@ -192,4 +190,20 @@ body {
 .restaurants__card i {
   margin-top: 20px;
   padding: 20px;
+}
+
+.website-titles {
+  padding: 20px 20px 60px;
+  background-color: #f6f6f6;
+  text-align: center;
+}
+.website-titles__title {
+  line-height: 30px;
+  padding: 0 40px 0;
+}
+.website-titles__subtitle {
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 20px;
+  padding-bottom: 30px;
 }
