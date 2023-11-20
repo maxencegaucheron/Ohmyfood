@@ -44,3 +44,44 @@
          }
      }
  }
+
+ .fonctionnement {
+     padding: 30px 20px 45px;
+
+     &__card {
+         display: flex;
+         align-items: center;
+         padding: 10px;
+         border-radius: 20px;
+         margin-left: 10px;
+         margin-bottom: 20px;
+         background-color: $light-grey;
+         font-weight: 500;
+         box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.1);
+
+         i {
+             padding: 20px;
+             color: #7e7e7e
+         }
+
+         &--purple {
+             i {
+                 color: $primary-color;
+             }
+         }
+
+         &__number {
+             display: flex;
+             align-items: center;
+             padding: 7px;
+             color: white;
+             background-color: $primary-color;
+             width: 24px;
+             height: 24px;
+             border-radius: 50%;
+             position: absolute;
+             left: 20px;
+         }
+     }
+
+ }

@@ -139,13 +139,6 @@ body {
   margin: 0 0 10px;
 }
 
-.fonctionnement {
-  padding: 30px 20px 45px;
-}
-.fonctionnement__card {
-  display: flex;
-}
-
 .colored-button {
   color: white;
   background-image: linear-gradient(#FF79DA, #9356DC);
@@ -190,6 +183,40 @@ body {
 .restaurants__card i {
   margin-top: 20px;
   padding: 20px;
+}
+
+.fonctionnement {
+  padding: 30px 20px 45px;
+}
+.fonctionnement__card {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-radius: 20px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  background-color: #f6f6f6;
+  font-weight: 500;
+  box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.1);
+}
+.fonctionnement__card i {
+  padding: 20px;
+  color: #7e7e7e;
+}
+.fonctionnement__card--purple i {
+  color: #9356DC;
+}
+.fonctionnement__card__number {
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  color: white;
+  background-color: #9356DC;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  position: absolute;
+  left: 20px;
 }
 
 .website-titles {
