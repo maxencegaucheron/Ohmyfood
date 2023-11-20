@@ -19,9 +19,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        color: #353535;
-        background-color: #EAEAEA;
-        box-shadow: inset 1px 6px 10px -10px #353535;
+        color: $dark-grey;
+        background-color: $mid-grey;
+        box-shadow: inset 1px 6px 10px -10px $dark-grey;
         ;
     }
 
@@ -34,7 +34,7 @@
         border: none;
         font-size: 16px;
         font-weight: 500;
-        background-color: #EAEAEA;
+        background-color: $mid-grey;
     }
 
     &__search-function textarea:active,
@@ -43,7 +43,7 @@
     }
 
     ::placeholder {
-        color: #353535;
+        color: $dark-grey;
     }
 
 }
