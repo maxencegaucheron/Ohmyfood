@@ -13,10 +13,10 @@
 'base/helpers';
 
 // 4. Layout-related sections
-@import 'layout/header', 'layout/footer';
+@import 'layout/header', 'layout/footer', 'layout/tempmain';
 
 // 5. Components
-@import 'components/button';
+@import 'components/button', 'components/card';
 
 // 6. Page-specific styles
 @import 'pages/home';
