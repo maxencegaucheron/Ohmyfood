@@ -80,7 +80,7 @@ body {
 }
 .header__logo {
   width: 100%;
-  height: 55%;
+  height: 63px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,7 +90,7 @@ body {
 }
 .header__search-function {
   width: 100%;
-  height: 45%;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,6 +114,28 @@ body {
 }
 .header ::placeholder {
   color: #353535;
+}
+
+.header-restaurant {
+  height: 63px;
+  display: flex;
+  align-items: center;
+}
+.header-restaurant__logo {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 37px;
+}
+.header-restaurant__logo-image {
+  width: 162px;
+}
+.header-restaurant__back-icon {
+  width: 17px;
+  height: 17px;
+  margin-left: 20px;
 }
 
 .footer {
