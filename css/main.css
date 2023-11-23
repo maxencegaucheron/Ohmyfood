@@ -160,6 +160,9 @@ body {
 .footer__text {
   margin: 0 0 10px;
 }
+.footer a {
+  color: white;
+}
 
 .colored-button {
   color: white;
