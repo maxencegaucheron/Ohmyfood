@@ -1,6 +1,3 @@
-/**
- * Set up a decent box model on the root element
- */
 html {
   box-sizing: border-box;
 }
@@ -9,21 +6,12 @@ body {
   margin: 0;
 }
 
-/**
- * Make all elements from the DOM inherit from the parent box-sizing
- * Since `*` has a specificity of 0, it does not override the `html` value
- * making all elements inheriting from the root box-sizing value
- * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
- */
 *,
 *::before,
 *::after {
   box-sizing: inherit;
 }
 
-/**
- * Basic styles for links
- */
 a {
   color: black;
   text-decoration: none;
@@ -33,9 +21,6 @@ a:hover, a:active, a:focus, a:focus-within {
   text-decoration: none;
 }
 
-/**
- * Basic typography style for copy text
- */
 * {
   font-family: "Roboto";
 }
@@ -43,15 +28,6 @@ a:hover, a:active, a:focus, a:focus-within {
 body {
   color: #000000;
   font: normal 100%/1 "Roboto";
-}
-
-/**
- * Clear inner floats
- */
-.clearfix::after {
-  clear: both;
-  content: "";
-  display: table;
 }
 
 /**
@@ -76,11 +52,11 @@ body {
 }
 
 .header {
-  height: 113px;
+  height: 63px;
 }
 .header__logo {
+  height: 100%;
   width: 100%;
-  height: 63px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,54 +64,17 @@ body {
 .header__logo-image {
   width: 162px;
 }
-.header__search-function {
-  width: 100%;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #353535;
-  background-color: #EAEAEA;
-  box-shadow: inset 1px 6px 10px -10px #353535;
-}
-.header__search-function i {
-  padding-right: 10px;
-}
-.header__search-function input {
-  width: 112px;
-  border: none;
-  font-size: 16px;
-  font-weight: 500;
-  background-color: #EAEAEA;
-}
-.header__search-function textarea:active,
-.header input:focus {
-  outline: none;
-}
-.header ::placeholder {
-  color: #353535;
-}
 
-.header-restaurant {
-  height: 63px;
+.header-menu {
   display: flex;
   align-items: center;
+  position: relative;
 }
-.header-restaurant__logo {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-right: 37px;
-}
-.header-restaurant__logo-image {
-  width: 162px;
-}
-.header-restaurant__back-icon {
+.header-menu__back-icon {
+  position: absolute;
+  left: 20px;
   width: 17px;
   height: 17px;
-  margin-left: 20px;
 }
 
 .footer {
@@ -146,6 +85,7 @@ body {
 }
 .footer__title {
   font-family: "Shrikhand";
+  font-size: 18px;
   margin: 0 0 25px;
 }
 .footer__icon-and-text {
@@ -166,40 +106,32 @@ body {
 
 .colored-button {
   color: white;
-  background-image: linear-gradient(#FF79DA, #9356DC);
   border-radius: 50px;
-  padding: 15px 20px 15px;
+  background-image: linear-gradient(#FF79DA, #9356DC);
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+  padding: 15px 20px 15px;
 }
-.colored-button:active, .colored-button:hover {
+.colored-button:active, .colored-button:hover, .colored-button:focus {
   color: white;
-}
-
-.menu__colored-button {
-  position: relative;
-  bottom: 40px;
-  padding: 0px 0 0px;
-  margin: 0;
-  display: flex;
-  justify-content: center;
+  background-image: linear-gradient(rgba(255, 121, 218, 0.7), rgba(147, 86, 220, 0.9));
+  box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.25);
 }
 
 .colored-button--menu {
   color: white;
-  background-image: linear-gradient(#FF79DA, #9356DC);
   border-radius: 50px;
-  padding: 15px 50px 15px;
+  background-image: linear-gradient(#FF79DA, #9356DC);
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
+  padding: 15px 50px 15px;
 }
-.colored-button--menu:active, .colored-button--menu:hover {
+.colored-button--menu:active, .colored-button--menu:hover, .colored-button--menu:focus {
   color: white;
+  background-image: linear-gradient(rgba(255, 121, 218, 0.7), rgba(147, 86, 220, 0.9));
+  box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.25);
 }
 
-.menu-section {
-  margin-bottom: 25px;
-}
-.menu-section__button {
-  height: 69px;
+.menu_section__button {
+  height: 90px;
   width: 100%;
   background-color: white;
   border-radius: 20px;
@@ -208,24 +140,24 @@ body {
   box-shadow: 0px 2px 14px -2px rgba(0, 0, 0, 0.1);
   margin-bottom: 15px;
 }
-.menu-section__button__titles {
+.menu_section__button__titles {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 16px;
+  padding: 0 16px 0;
 }
-.menu-section__button__titles__title {
+.menu_section__button__titles__title {
   font-size: 18px;
   font-weight: 500;
   padding-bottom: 8px;
   margin: 0;
 }
-.menu-section__button__titles__subtitle {
+.menu_section__button__titles__subtitle {
   margin: 0;
   font-size: 15px;
   font-weight: 300;
 }
-.menu-section__button__price {
+.menu_section__button__price {
   display: flex;
   align-self: flex-end;
   padding-right: 15px;
@@ -240,9 +172,9 @@ body {
 .restaurants__card {
   width: 100%;
   height: 251px;
-  border-radius: 20px;
   background-color: white;
   margin-bottom: 20px;
+  border-radius: 20px;
 }
 .restaurants__card img {
   object-fit: cover;
@@ -271,16 +203,25 @@ body {
   padding: 20px;
 }
 
-.fonctionnement {
-  padding: 30px 20px 45px;
+.new-rectangle {
+  position: relative;
+  top: -230px;
+  left: 235px;
+  color: #008766;
+  font-size: 14px;
+  padding: 10px 15px 10px;
+  background-color: #99E2D0;
+  border-radius: 2px;
+  box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.25);
 }
+
 .fonctionnement__card {
   display: flex;
   align-items: center;
   padding: 10px;
-  border-radius: 20px;
   margin-left: 10px;
   margin-bottom: 20px;
+  border-radius: 20px;
   background-color: #f6f6f6;
   font-weight: 500;
   box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.1);
@@ -303,6 +244,46 @@ body {
   border-radius: 50%;
   position: absolute;
   left: 20px;
+}
+
+.search-function {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #353535;
+  background-color: #EAEAEA;
+  box-shadow: inset 1px 6px 10px -10px #353535;
+}
+.search-function i {
+  padding-right: 10px;
+}
+.search-function input {
+  width: 112px;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  background-color: #EAEAEA;
+}
+.search-function textarea:active,
+.search-function input:focus {
+  outline: none;
+}
+.search-function ::placeholder {
+  color: #353535;
+}
+
+.fonctionnement {
+  padding: 30px 20px 45px;
+}
+
+.menu__colored-button {
+  position: relative;
+  padding: 20px 0 45px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
 }
 
 .website-titles {
@@ -332,7 +313,7 @@ body {
 }
 .menu-pages__title {
   position: relative;
-  bottom: 55px;
+  margin-top: -55px;
   display: flex;
   align-items: center;
   padding: 20px 15px 0;
@@ -349,9 +330,8 @@ body {
 }
 
 .menu-section {
-  position: relative;
-  bottom: 55px;
   padding: 0 12px 0;
+  margin-bottom: 25px;
 }
 .menu-section__title {
   padding: 10px 0 10px;

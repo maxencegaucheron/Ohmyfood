@@ -1,3 +1,19 @@
+/// Homepage - Sections properties
+
+.fonctionnement {
+    padding: 30px 20px 45px;
+}
+
+.menu__colored-button {
+    position: relative;
+    padding: 20px 0 45px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/// Homepage - Website titles
+
 .website-titles {
     padding: 20px 20px 60px;
     background-color: $light-grey;

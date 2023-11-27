@@ -2,10 +2,7 @@
 
 // 1. Configuration and helpers
 @import 'abstracts/variables',
-'abstracts/functions',
 'abstracts/mixins';
-
-// 2. Vendors / deleted
 
 // 3. Base stuff
 @import 'base/base',
@@ -13,12 +10,10 @@
 'base/helpers';
 
 // 4. Layout-related sections
-@import 'layout/header', 'layout/footer', 'layout/tempmain';
+@import 'layout/header', 'layout/footer';
 
 // 5. Components
-@import 'components/button', 'components/card';
+@import 'components/button', 'components/card', 'components/form';
 
 // 6. Page-specific styles
 @import 'pages/home', 'pages/menu';
-
-// 7. Themes / deleted

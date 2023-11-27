@@ -1,87 +1,99 @@
- .restaurants {
-     background-color: $light-grey;
-     padding: 40px 20px 45px;
+/// Homepage - Restaurants
 
-     &__card {
-         width: 100%;
-         height: 251px;
-         border-radius: 20px;
-         background-color: white;
-         margin-bottom: 20px;
+.restaurants {
+    background-color: $light-grey;
+    padding: 40px 20px 45px;
 
-         img {
-             object-fit: cover;
-             width: 100%;
-             height: 65%;
-             border-top-right-radius: 20px;
-             border-top-left-radius: 20px;
-         }
+    &__card {
+        width: 100%;
+        height: 251px;
+        background-color: white;
+        margin-bottom: 20px;
+        border-radius: 20px;
 
-         &__content {
-             height: 35%;
-             display: flex;
-             justify-content: space-between;
-             vertical-align: middle;
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 65%;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+        }
 
-             &__text {
-                 &__title {
-                     font-size: 18px;
-                     margin: 20px 15px 10px;
-                 }
+        &__content {
+            height: 35%;
+            display: flex;
+            justify-content: space-between;
+            vertical-align: middle;
 
-                 &__subtitle {
-                     font-size: 17px;
-                     font-weight: 100;
-                     margin: 0 15px 0px;
-                 }
-             }
-         }
+            &__text {
+                &__title {
+                    font-size: 18px;
+                    margin: 20px 15px 10px;
+                }
 
+                &__subtitle {
+                    font-size: 17px;
+                    font-weight: 100;
+                    margin: 0 15px 0px;
+                }
+            }
+        }
 
-         i {
-             margin-top: 20px;
-             padding: 20px;
-         }
-     }
- }
+        i {
+            margin-top: 20px;
+            padding: 20px;
+        }
+    }
+}
 
- .fonctionnement {
-     padding: 30px 20px 45px;
+/// Homepage - Restaurants: New sticker
 
-     &__card {
-         display: flex;
-         align-items: center;
-         padding: 10px;
-         border-radius: 20px;
-         margin-left: 10px;
-         margin-bottom: 20px;
-         background-color: $light-grey;
-         font-weight: 500;
-         box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.1);
+.new-rectangle {
+    position: relative;
+    top: -230px;
+    left: 235px;
+    color: #008766;
+    font-size: 14px;
+    padding: 10px 15px 10px;
+    background-color: #99E2D0;
+    border-radius: 2px;
+    box-shadow: 0px 4px 6px -2px rgba(0, 0, 0, 0.25);
+}
 
-         i {
-             padding: 20px;
-             color: #7e7e7e
-         }
+/// Homepage - How it works
 
-         &--purple {
-             i {
-                 color: $primary-color;
-             }
-         }
+.fonctionnement__card {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-color: $light-grey;
+    font-weight: 500;
+    box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.1);
 
-         &__number {
-             display: flex;
-             align-items: center;
-             padding: 7px;
-             color: white;
-             background-color: $primary-color;
-             width: 24px;
-             height: 24px;
-             border-radius: 50%;
-             position: absolute;
-             left: 20px;
-         }
-     }
+    i {
+        padding: 20px;
+        color: #7e7e7e
+    }
 
- }
+    &--purple {
+        i {
+            color: $primary-color;
+        }
+    }
+
+    &__number {
+        display: flex;
+        align-items: center;
+        padding: 7px;
+        color: white;
+        background-color: $primary-color;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        position: absolute;
+        left: 20px;
+    }
+}
