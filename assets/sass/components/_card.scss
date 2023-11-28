@@ -70,7 +70,7 @@
 
 /// Homepage - How it works
 
-.fonctionnement__card {
+.fonctionnement__section__card {
     display: flex;
     align-items: center;
     padding: 10px;
@@ -103,5 +103,21 @@
         border-radius: 50%;
         position: absolute;
         left: 20px;
+    }
+
+    @media (min-width: 768px) {
+        width: 322px;
+        margin-top: 10px;
+        margin-right: 20px;
+        justify-content: flex-start;
+
+        &__number {
+            position: relative;
+            left: -20px;
+        }
+
+        i {
+            padding-left: 0px;
+        }
     }
 }

@@ -1,7 +1,20 @@
 /// Homepage - Sections properties
-
 .fonctionnement {
     padding: 30px 20px 45px;
+
+    @media (min-width: 768px) {
+        padding: 30px 60px 45px;
+
+        &__section {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+    }
+
+    @media (min-width: 1140px) {
+        padding: 30px 190px 45px;
+    }
 }
 
 .menu__colored-button {
