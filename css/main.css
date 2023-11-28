@@ -76,20 +76,39 @@ body {
   font-size: 18px;
   margin: 0 0 25px;
 }
-.footer__icon-and-text {
+.footer__links__icon-and-text {
   display: flex;
   padding: 0;
 }
-.footer__icon-and-text i {
+.footer__links__icon-and-text i {
   display: flex;
   align-items: center;
   margin: 0 10px 10px 0;
 }
-.footer__text {
+.footer__links__text {
   margin: 0 0 10px;
 }
-.footer a {
+.footer__links a {
   color: white;
+}
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 60px 60px 10px;
+  }
+  .footer__title {
+    padding-left: 90px;
+  }
+  .footer__links {
+    display: flex;
+  }
+  .footer__links__icon-and-text {
+    margin-right: 20px;
+  }
+  .footer__links__text {
+    margin-left: 20px;
+  }
 }
 
 .colored-button {
