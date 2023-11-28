@@ -1,4 +1,7 @@
-/// Homepage - Sections properties
+/// Properties of the homepage sections
+
+/// How it works
+
 .fonctionnement {
     padding: 30px 20px 45px;
 
@@ -17,15 +20,7 @@
     }
 }
 
-.menu__colored-button {
-    position: relative;
-    padding: 20px 0 45px;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-/// Homepage - Website titles
+/// Titles
 
 .website-titles {
     padding: 20px 20px 60px;
@@ -42,5 +37,27 @@
         font-weight: 100;
         line-height: 20px;
         padding-bottom: 30px;
+    }
+}
+
+/// Restaurants
+
+.restaurants {
+    background-color: $light-grey;
+    padding: 40px 20px 45px;
+
+    @media (min-width: 768px) {
+        padding: 30px 60px 45px;
+    }
+
+    @media (min-width: 1140px) {
+        padding: 30px 190px 45px;
+    }
+
+    &__section {
+        padding-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
 }
