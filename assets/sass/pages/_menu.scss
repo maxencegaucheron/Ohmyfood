@@ -4,16 +4,21 @@
 
 .main-menu {
     background-color: $light-grey;
+
+    &__image {
+        object-fit: cover;
+        height: 275px;
+        width: 100%;
+    }
+
+    @media (min-width: 768px) {
+        background-color: white;
+    }
 }
 
 /// Restaurant title
 
 .menu-pages {
-    &__images {
-        object-fit: cover;
-        height: 275px;
-        width: 100%;
-    }
 
     &__title {
         position: relative;
@@ -34,13 +39,25 @@
             padding: 0 20px 0 30px;
         }
     }
+
+    @media (min-width: 768px) {
+        margin: 0 60px 0;
+        background-color: $light-grey;
+
+        &__title {
+            justify-content: center;
+        }
+    }
+
+    @media (min-width: 1140px) {
+        margin: 0 190px 0;
+    }
 }
 
 /// Menu
 
 .menu-section {
-    padding: 0 12px 0;
-    margin-bottom: 25px;
+    padding: 0 12px 12px;
 
     &__title {
         padding: 10px 0 10px;
@@ -48,6 +65,10 @@
         font-size: 16px;
         border-bottom: solid 3px $tertiary-color;
         width: 40px;
+    }
+
+    @media (min-width: 768px) {
+        padding: 10px 200px 10px;
     }
 }
 
@@ -59,4 +80,13 @@
     margin: 0;
     display: flex;
     justify-content: center;
+
+    @media (min-width: 768px) {
+        margin: 0 60px 0;
+        background-color: $light-grey;
+    }
+
+    @media (min-width: 1140px) {
+        margin: 0 190px 0;
+    }
 }

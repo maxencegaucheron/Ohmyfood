@@ -364,12 +364,17 @@ body {
 .main-menu {
   background-color: #f6f6f6;
 }
-
-.menu-pages__images {
+.main-menu__image {
   object-fit: cover;
   height: 275px;
   width: 100%;
 }
+@media (min-width: 768px) {
+  .main-menu {
+    background-color: white;
+  }
+}
+
 .menu-pages__title {
   position: relative;
   margin-top: -55px;
@@ -387,10 +392,23 @@ body {
 .menu-pages__title i {
   padding: 0 20px 0 30px;
 }
+@media (min-width: 768px) {
+  .menu-pages {
+    margin: 0 60px 0;
+    background-color: #f6f6f6;
+  }
+  .menu-pages__title {
+    justify-content: center;
+  }
+}
+@media (min-width: 1140px) {
+  .menu-pages {
+    margin: 0 190px 0;
+  }
+}
 
 .menu-section {
-  padding: 0 12px 0;
-  margin-bottom: 25px;
+  padding: 0 12px 12px;
 }
 .menu-section__title {
   padding: 10px 0 10px;
@@ -399,6 +417,11 @@ body {
   border-bottom: solid 3px #99E2D0;
   width: 40px;
 }
+@media (min-width: 768px) {
+  .menu-section {
+    padding: 10px 200px 10px;
+  }
+}
 
 .menu__colored-button {
   position: relative;
@@ -406,4 +429,15 @@ body {
   margin: 0;
   display: flex;
   justify-content: center;
+}
+@media (min-width: 768px) {
+  .menu__colored-button {
+    margin: 0 60px 0;
+    background-color: #f6f6f6;
+  }
+}
+@media (min-width: 1140px) {
+  .menu__colored-button {
+    margin: 0 190px 0;
+  }
 }
