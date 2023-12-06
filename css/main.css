@@ -4,6 +4,7 @@ html {
 
 body {
   margin: 0;
+  margin: auto;
 }
 
 *,
@@ -28,15 +29,6 @@ a:hover, a:active, a:focus, a:focus-within {
 body {
   color: #000000;
   font: normal 100%/1 "Roboto";
-}
-
-.container {
-  max-width: 767.98px;
-  margin-left: 0px;
-  margin-right: 0px;
-  padding-left: 0px;
-  padding-right: 0px;
-  width: 100%;
 }
 
 .header {
@@ -114,30 +106,31 @@ body {
 .colored-button {
   color: white;
   border-radius: 50px;
-  background-image: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#FF79DA, #9356DC);
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
   padding: 15px 20px 15px;
 }
 .colored-button:active, .colored-button:hover, .colored-button:focus {
   color: white;
-  background-image: linear-gradient(rgba(255, 121, 218, 0.7), rgba(147, 86, 220, 0.9));
+  filter: brightness(110%);
   box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.25);
 }
 
 .colored-button--menu {
   color: white;
   border-radius: 50px;
-  background-image: linear-gradient(#FF79DA, #9356DC);
+  background: linear-gradient(#FF79DA, #9356DC);
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.25);
   padding: 15px 50px 15px;
 }
 .colored-button--menu:active, .colored-button--menu:hover, .colored-button--menu:focus {
   color: white;
-  background-image: linear-gradient(rgba(255, 121, 218, 0.7), rgba(147, 86, 220, 0.9));
+  filter: brightness(110%);
   box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.25);
 }
 
 .restaurants__section__card {
+  position: relative;
   width: 100%;
   height: 251px;
   background-color: white;
@@ -177,14 +170,11 @@ body {
   padding: 20px;
 }
 
-.new-rectangle {
-  display: flex;
-  justify-content: flex-end;
-  position: relative;
-  padding-right: 15px;
-  top: -240px;
-}
 .new-rectangle__text {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  padding-right: 15px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -228,7 +218,7 @@ body {
 }
 @media (min-width: 768px) {
   .fonctionnement__section__card {
-    width: 322px;
+    width: 30%;
     margin-top: 10px;
     margin-right: 20px;
     justify-content: flex-start;
