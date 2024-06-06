@@ -330,6 +330,7 @@ body {
   }
   100% {
     opacity: 0;
+    display: none;
   }
 }
 .website-loader__loader-1 {
