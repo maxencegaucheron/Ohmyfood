@@ -140,6 +140,7 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
+        transition: padding-right 400ms ease-in-out;
 
         &__titles {
             display: flex;
@@ -177,16 +178,22 @@
     }
 
     &:hover &__tick {
+        /// animation: tick 500ms forwards;
         transform: translate(-75px);
     }
 
-    &:hover &__content__price {
-        transform: translate(-75px);
+    &:hover &__content {
+        padding-right: 75px;
     }
+
+    /// &:hover &__content__price {
+    ///      transform: translate(-75px);
+    ///   }
 
     &__tick {
         background-color: #99E2D0;
         height: 90px;
+        /// width: 0;
         width: 75px;
         position: absolute;
         right: -75px;
@@ -204,5 +211,15 @@
             padding: 5px;
             border-radius: 50%;
         }
+    }
+}
+
+@keyframes tick {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 75px;
     }
 }
