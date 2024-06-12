@@ -22,3 +22,9 @@ $breakpoints: (
   'medium': 768px,
   'large': 1024px,
   ) !default;
+
+/// Animation card-appear
+
+$num-card: 9;
+$anim-dur: 1800ms;
+$anim-delay: $anim-dur / $num-card;

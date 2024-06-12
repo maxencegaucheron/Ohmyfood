@@ -134,82 +134,100 @@
     overflow: hidden;
     text-overflow: ellipsis;
     cursor: pointer;
+    animation: card-appear $anim-dur backwards;
 
-    &__content {
-        height: 90px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        transition: padding-right 500ms ease-in-out;
+    @for $i from 1 through $num-card {
+        &--#{$i} {
+            animation-delay: $anim-delay * $i;
+        }
 
-        &__titles {
+        &__content {
+            height: 90px;
+            width: 100%;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 0 16px 0;
-            overflow: hidden;
-            transition: white-space 500ms ease-in-out;
+            justify-content: space-between;
+            transition: padding-right 500ms ease-in-out;
 
-            &__title {
-                font-size: 18px;
-                font-weight: 500;
-                padding-bottom: 8px;
-                margin: 0;
+            &__titles {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding: 0 16px 0;
                 overflow: hidden;
-                text-overflow: ellipsis;
+                transition: white-space 500ms ease-in-out;
+
+                &__title {
+                    font-size: 18px;
+                    font-weight: 500;
+                    padding-bottom: 8px;
+                    margin: 0;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                &__subtitle {
+                    margin: 0;
+                    font-size: 15px;
+                    font-weight: 300;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
             }
 
-            &__subtitle {
-                margin: 0;
+            &__price {
+                display: flex;
+                align-self: flex-end;
+                padding-right: 15px;
                 font-size: 15px;
-                font-weight: 300;
-                overflow: hidden;
-                text-overflow: ellipsis;
+                font-weight: 700;
+                transition: transform 500ms ease-in-out;
             }
         }
 
-        &__price {
+        &:hover &__tick {
+            transform: translate(-75px);
+        }
+
+        &:hover &__content {
+            padding-right: 75px;
+        }
+
+        &:hover &__content__titles {
+            white-space: nowrap;
+        }
+
+        &__tick {
+            background-color: #99E2D0;
+            height: 90px;
+            width: 75px;
+            position: absolute;
+            right: -75px;
             display: flex;
-            align-self: flex-end;
-            padding-right: 15px;
-            font-size: 15px;
-            font-weight: 700;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            margin-bottom: 15px;
             transition: transform 500ms ease-in-out;
+
+            &__icon {
+                color: #99E2D0;
+                background-color: white;
+                font-size: 18px;
+                padding: 5px;
+                border-radius: 50%;
+            }
         }
     }
+}
 
-    &:hover &__tick {
-        /// animation: tick 500ms forwards;
-        transform: translate(-75px);
+/// Animation card-appear
+
+@keyframes card-appear {
+    0% {
+        transform: translateX(-100vw);
     }
 
-    &:hover &__content {
-        padding-right: 75px;
-    }
-
-    &:hover &__content__titles {
-        white-space: nowrap;
-    }
-
-    &__tick {
-        background-color: #99E2D0;
-        height: 90px;
-        width: 75px;
-        position: absolute;
-        right: -75px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: hidden;
-        margin-bottom: 15px;
-        transition: transform 500ms ease-in-out;
-
-        &__icon {
-            color: #99E2D0;
-            background-color: white;
-            font-size: 18px;
-            padding: 5px;
-            border-radius: 50%;
-        }
+    100% {
+        transform: translateX(0);
     }
 }
