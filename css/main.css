@@ -265,7 +265,7 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   cursor: pointer;
-  animation: card-appear 1800ms backwards;
+  animation: card-appear 2000ms backwards;
 }
 .menu-section__card--1 {
   animation-delay: 200ms;
@@ -829,6 +829,76 @@ body {
 }
 .menu-section__card--9 {
   animation-delay: 1800ms;
+}
+.menu-section__card__content {
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transition: padding-right 500ms ease-in-out;
+}
+.menu-section__card__content__titles {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 16px 0;
+  overflow: hidden;
+  transition: white-space 500ms ease-in-out;
+}
+.menu-section__card__content__titles__title {
+  font-size: 18px;
+  font-weight: 500;
+  padding-bottom: 8px;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu-section__card__content__titles__subtitle {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu-section__card__content__price {
+  display: flex;
+  align-self: flex-end;
+  padding-right: 15px;
+  font-size: 15px;
+  font-weight: 700;
+  transition: transform 500ms ease-in-out;
+}
+.menu-section__card:hover .menu-section__card__tick {
+  transform: translate(-75px);
+}
+.menu-section__card:hover .menu-section__card__content {
+  padding-right: 75px;
+}
+.menu-section__card:hover .menu-section__card__content__titles {
+  white-space: nowrap;
+}
+.menu-section__card__tick {
+  background-color: #99E2D0;
+  height: 90px;
+  width: 75px;
+  position: absolute;
+  right: -75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  margin-bottom: 15px;
+  transition: transform 500ms ease-in-out;
+}
+.menu-section__card__tick__icon {
+  color: #99E2D0;
+  background-color: white;
+  font-size: 18px;
+  padding: 5px;
+  border-radius: 50%;
+}
+.menu-section__card--10 {
+  animation-delay: 2000ms;
 }
 .menu-section__card__content {
   height: 90px;

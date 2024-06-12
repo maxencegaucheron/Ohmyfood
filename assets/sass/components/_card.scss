@@ -136,7 +136,7 @@
     cursor: pointer;
     animation: card-appear $anim-dur backwards;
 
-    @for $i from 1 through $num-card {
+    @for $i from 1 through $num-cards {
         &--#{$i} {
             animation-delay: $anim-delay * $i;
         }

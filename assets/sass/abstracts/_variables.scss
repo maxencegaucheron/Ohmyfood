@@ -25,6 +25,7 @@ $breakpoints: (
 
 /// Animation card-appear
 
-$num-card: 9;
-$anim-dur: 1800ms;
-$anim-delay: $anim-dur / $num-card;
+$num-cards: 10;
+$base-duration: 200ms;
+$anim-dur: $num-cards * $base-duration;
+$anim-delay: 200ms;
